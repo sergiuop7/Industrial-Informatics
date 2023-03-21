@@ -1,0 +1,11 @@
+D:\II\Lab\Lab2\WindowsFormsApp1\Exercise3\bin\Debug\Exercise3.exe.config
+D:\II\Lab\Lab2\WindowsFormsApp1\Exercise3\bin\Debug\Exercise3.exe
+D:\II\Lab\Lab2\WindowsFormsApp1\Exercise3\bin\Debug\Exercise3.pdb
+D:\II\Lab\Lab2\WindowsFormsApp1\Exercise3\obj\Debug\Exercise3.csproj.AssemblyReference.cache
+D:\II\Lab\Lab2\WindowsFormsApp1\Exercise3\obj\Debug\Exercise3.csproj.SuggestedBindingRedirects.cache
+D:\II\Lab\Lab2\WindowsFormsApp1\Exercise3\obj\Debug\Exercise3.Form1.resources
+D:\II\Lab\Lab2\WindowsFormsApp1\Exercise3\obj\Debug\Exercise3.Properties.Resources.resources
+D:\II\Lab\Lab2\WindowsFormsApp1\Exercise3\obj\Debug\Exercise3.csproj.GenerateResource.cache
+D:\II\Lab\Lab2\WindowsFormsApp1\Exercise3\obj\Debug\Exercise3.csproj.CoreCompileInputs.cache
+D:\II\Lab\Lab2\WindowsFormsApp1\Exercise3\obj\Debug\Exercise3.exe
+D:\II\Lab\Lab2\WindowsFormsApp1\Exercise3\obj\Debug\Exercise3.pdb
