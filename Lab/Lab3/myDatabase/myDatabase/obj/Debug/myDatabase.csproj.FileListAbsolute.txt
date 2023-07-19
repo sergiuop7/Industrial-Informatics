@@ -1,0 +1,13 @@
+D:\II\Lab\Lab3\myDatabase\myDatabase\bin\Debug\Database1.mdf
+D:\II\Lab\Lab3\myDatabase\myDatabase\bin\Debug\Database1_log.ldf
+D:\II\Lab\Lab3\myDatabase\myDatabase\bin\Debug\myDatabase.exe.config
+D:\II\Lab\Lab3\myDatabase\myDatabase\bin\Debug\myDatabase.exe
+D:\II\Lab\Lab3\myDatabase\myDatabase\bin\Debug\myDatabase.pdb
+D:\II\Lab\Lab3\myDatabase\myDatabase\obj\Debug\myDatabase.csproj.AssemblyReference.cache
+D:\II\Lab\Lab3\myDatabase\myDatabase\obj\Debug\myDatabase.csproj.SuggestedBindingRedirects.cache
+D:\II\Lab\Lab3\myDatabase\myDatabase\obj\Debug\myDatabase.Form1.resources
+D:\II\Lab\Lab3\myDatabase\myDatabase\obj\Debug\myDatabase.Properties.Resources.resources
+D:\II\Lab\Lab3\myDatabase\myDatabase\obj\Debug\myDatabase.csproj.GenerateResource.cache
+D:\II\Lab\Lab3\myDatabase\myDatabase\obj\Debug\myDatabase.csproj.CoreCompileInputs.cache
+D:\II\Lab\Lab3\myDatabase\myDatabase\obj\Debug\myDatabase.exe
+D:\II\Lab\Lab3\myDatabase\myDatabase\obj\Debug\myDatabase.pdb
