@@ -1,0 +1,8 @@
+D:\II\Lab\Lab4\MyFirstClient\MyFirstClient\bin\Debug\MyFirstClient.exe.config
+D:\II\Lab\Lab4\MyFirstClient\MyFirstClient\bin\Debug\MyFirstClient.exe
+D:\II\Lab\Lab4\MyFirstClient\MyFirstClient\bin\Debug\MyFirstClient.pdb
+D:\II\Lab\Lab4\MyFirstClient\MyFirstClient\obj\Debug\MyFirstClient.csproj.AssemblyReference.cache
+D:\II\Lab\Lab4\MyFirstClient\MyFirstClient\obj\Debug\MyFirstClient.csproj.SuggestedBindingRedirects.cache
+D:\II\Lab\Lab4\MyFirstClient\MyFirstClient\obj\Debug\MyFirstClient.csproj.CoreCompileInputs.cache
+D:\II\Lab\Lab4\MyFirstClient\MyFirstClient\obj\Debug\MyFirstClient.exe
+D:\II\Lab\Lab4\MyFirstClient\MyFirstClient\obj\Debug\MyFirstClient.pdb
