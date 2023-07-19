@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddToBiblioteca">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="author" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="editura" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="yearPublished" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddToBibliotecaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddToBibliotecaResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFromBiblioteca">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteFromBibliotecaResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ModifyBibliotecaData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="author" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="editura" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyBibliotecaDataResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddToBibliotecaSoapIn">
+    <wsdl:part name="parameters" element="tns:AddToBiblioteca" />
+  </wsdl:message>
+  <wsdl:message name="AddToBibliotecaSoapOut">
+    <wsdl:part name="parameters" element="tns:AddToBibliotecaResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFromBibliotecaSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteFromBiblioteca" />
+  </wsdl:message>
+  <wsdl:message name="DeleteFromBibliotecaSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteFromBibliotecaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModifyBibliotecaDataSoapIn">
+    <wsdl:part name="parameters" element="tns:ModifyBibliotecaData" />
+  </wsdl:message>
+  <wsdl:message name="ModifyBibliotecaDataSoapOut">
+    <wsdl:part name="parameters" element="tns:ModifyBibliotecaDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceTema2Soap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddToBiblioteca">
+      <wsdl:input message="tns:AddToBibliotecaSoapIn" />
+      <wsdl:output message="tns:AddToBibliotecaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFromBiblioteca">
+      <wsdl:input message="tns:DeleteFromBibliotecaSoapIn" />
+      <wsdl:output message="tns:DeleteFromBibliotecaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyBibliotecaData">
+      <wsdl:input message="tns:ModifyBibliotecaDataSoapIn" />
+      <wsdl:output message="tns:ModifyBibliotecaDataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceTema2Soap" type="tns:WebServiceTema2Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddToBiblioteca">
+      <soap:operation soapAction="http://tempuri.org/AddToBiblioteca" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFromBiblioteca">
+      <soap:operation soapAction="http://tempuri.org/DeleteFromBiblioteca" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyBibliotecaData">
+      <soap:operation soapAction="http://tempuri.org/ModifyBibliotecaData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceTema2Soap12" type="tns:WebServiceTema2Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddToBiblioteca">
+      <soap12:operation soapAction="http://tempuri.org/AddToBiblioteca" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFromBiblioteca">
+      <soap12:operation soapAction="http://tempuri.org/DeleteFromBiblioteca" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyBibliotecaData">
+      <soap12:operation soapAction="http://tempuri.org/ModifyBibliotecaData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceTema2">
+    <wsdl:port name="WebServiceTema2Soap" binding="tns:WebServiceTema2Soap">
+      <soap:address location="https://localhost:44347/WebServiceTema2.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceTema2Soap12" binding="tns:WebServiceTema2Soap12">
+      <soap12:address location="https://localhost:44347/WebServiceTema2.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
